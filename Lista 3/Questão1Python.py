@@ -1,5 +1,5 @@
 def área(basemaior, basemenor, altura):
-    a = ((basemaior * basemenor)) *altura
+    a = (basemaior * basemenor) *altura /2
     print(f"A área do trapézio é: {a}cm²")
 
 basemenor = float(input("Digite o valor da base menor em centímetros: "))
