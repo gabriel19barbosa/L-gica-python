@@ -9,7 +9,6 @@ def conversao(horaconvertida):
         c -= 12
     elif horaconvertida<12:
         c = horaconvertida
-        c += 12
     return c
 
 def saida(horaconvertida):
