@@ -1,7 +1,3 @@
-hora = int(input("Digite a hora: "))
-minuto = int(input("Digite os minutos: "))
-a = "AM"
-p = "PM"
 def conversao(horaconvertida):
     global c
     if horaconvertida >= 12:
@@ -17,5 +13,21 @@ def saida(horaconvertida):
     else:
         print(f"{c}:{minuto}{p}")
 
-conversao(hora)
-saida(hora)
+a = "AM"
+p = "PM"
+end = True
+
+while end:
+    hora = int(input("Digite a hora: "))
+    minuto = int(input("Digite os minutos: "))
+
+    if hora >= 0 and hora <= 24:
+        conversao(hora)
+        saida(hora)
+    else:
+        print("Por favor digite uma hora válida")
+        break
+
+    continuar = input("você deseja continuar ?Digite S para sim ou N para não.").upper()
+    if continuar == "N":
+        end = False
