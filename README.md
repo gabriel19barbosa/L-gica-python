@@ -191,7 +191,7 @@ else:
     else:
         print(f"{c}:{minuto}{p}")
 
-*Estrutura de repetição que diz se o valor de hora é valido e pergunta se quer continuar a conversão
+*Estrutura de repetição que diz se o valor digitado é valido e pergunta se quer continuar a conversão
     
     end = True
 
