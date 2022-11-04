@@ -144,3 +144,68 @@ else:
 *Retorna ao usuário os valores contidos na lista
 
     print(teste)
+
+
+#Lista 3 questão 1
+
+*Função que calcula a área do trapézio
+
+    def área(basemaior, basemenor, altura):
+        a = (basemaior * basemenor) *altura /2
+        print(f"A área do trapézio é: {a}cm²")
+
+*Chamada de função com parâmetros definidos
+    área(basemaior, basemenor, altura)
+
+#Lista 3 questão 2 
+
+*Função que calcula o preço do produto com impostos.
+
+    def soma_imposto (taxa_imposto, custo):
+    preçoT = taxa_imposto + custo
+    print(f"O preço total do produto com impostos é R$: {preçoT}")
+
+*Variável que define o valor de 10% de impostos a ser cobrado
+    taxa_imposto= 0.10 * custo
+
+*Chamada de função com os parâmetros definidos
+    soma_imposto(custo, taxa_imposto)
+
+#Lista 3 questão 3 
+
+*Função que converte do formato de 24 horas para o formato de 12 horas
+    def conversao(horaconvertida):
+    global c
+    if horaconvertida >= 12:
+        c = horaconvertida
+        c -= 12
+    elif horaconvertida<12:
+        c = horaconvertida
+    return c
+
+*Função de saída que diz se a hora é "AM" ou "PM"
+    
+    def saida(horaconvertida):
+    if horaconvertida < 12:
+        print(f"{c}:{minuto}{a}")
+    else:
+        print(f"{c}:{minuto}{p}")
+
+*Estrutura de repetição que diz se o valor de hora é valido e pergunta se quer continuar a conversão
+    
+    end = True
+
+    while end:
+        hora = int(input("Digite a hora: "))
+        minuto = int(input("Digite os minutos: "))
+
+        if hora >= 0 and hora <= 24:
+            conversao(hora)
+            saida(hora)
+        else:
+            print("Por favor digite uma hora válida")
+            break
+
+        continuar = input("você deseja continuar ?Digite S para sim ou N para não.").upper()
+        if continuar == "N":
+            end = False
