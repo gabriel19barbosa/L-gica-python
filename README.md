@@ -174,6 +174,7 @@ else:
 #Lista 3 questão 3 
 
 *Função que converte do formato de 24 horas para o formato de 12 horas
+    
     def conversao(horaconvertida):
     global c
     if horaconvertida >= 12:
